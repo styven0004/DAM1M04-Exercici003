@@ -1,9 +1,119 @@
-div capcelera {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: yellow;
-    padding: 5px;
-    font-size: 20px;
-    z-index: 3;
+/* General */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fafafa;
 }
+
+/* Part superior */
+.top-bar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Capçalera sticky amb efecte "frozen glass" */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+/* Contingut dins la capçalera */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.boto-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+/* Secció esquerra (logo + nom) */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 28px;
+  height: 28px;
+}
+
+.logo-section h1 {
+  font-size: 20px;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.logo-section span {
+  font-weight: 400;
+  color: #666;
+}
+
+/* Menú de navegació */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;;
+}
+
+.nav-menu a:hover {
+  color: #000;
+}
+
+/* Botó "Buy" */
+.buy-btn {
+  background: #ff4b6a;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: #ff3255;
+}
+
+/* Contingut principal */
+.content {
+  padding: 50px;
+  background: white;
+  border-radius: 20px;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.autocenter {
+  max-width: 1264px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Peu de pàgina */
