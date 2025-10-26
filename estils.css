@@ -1,113 +1,286 @@
-
-
 body {
 margin: 0;
-background-color: #000;
-color: #fff;
+background-color: #ffffff;
+color: #000000;
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+/* Part superior */
 .top-bar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  padding: 15px;
-  background-color: darkred;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  z-index: 1000;
-}
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
-}
-
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-}
-
-.boto-header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-}
-
-
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-section img {
-  width: 28px;
-  height: 28px;
-}
-
-.logo-section h1 {
-  font-size: 20px;
-  justify-content: center;
-  font-weight: 600;
-  margin: 0;
-}
-
-.logo-section span {
-  font-weight: 400;
-  color: #666;
-}
-
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: #333;
-  font-size: 15px;;
-}
-
-.nav-menu a:hover {
-  color: #000;
-}
-
-
-.buy-btn {
-  background: #ff4b6a;
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.buy-btn:hover {
-  background: #ff3255;
-}
-
-.barra-fixed {
 position: fixed;
 top: 0; left: 0;
 width: 100%;
 padding: 15px;
+background-color: darkred;
 color: white;
 font-weight: bold;
 text-align: center;
 z-index: 1000;
+}
+/* Capçalera sticky amb efecte "frozen glass" */
+.sticky-header {
+position: sticky;
+top: 0;
+z-index: 1000;
+backdrop-filter: blur(10px);
+background: rgba(255, 255, 255, 0.6);
+border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+}
+/* Contingut dins la capçalera */
+.header-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 40px;
+}
+.boto-header-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 40px;
+}
+/* Secció esquerra (logo + nom) */
+.logo-section {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.logo-section img {
+width: 28px;
+height: 28px;
+}
+.logo-section h1 {
+font-size: 20px;
+justify-content: center;
+font-weight: 600;
+margin: 0;
+}
+.logo-section span {
+font-weight: 400;
+color: #666;
+}
+/* Menú de navegació */
+.nav-menu {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+.nav-menu a {
+text-decoration: none;
+color: #333;
+font-size: 15px;;
+}
+.nav-menu a:hover {
+color: #000;
+}
+/* Botó "Buy" */
+.buy-btn {
+background: #ff4b6a;
+color: white;
+border: none;
+padding: 8px 18px;
+border-radius: 20px;
+font-weight: 600;
+cursor: pointer;
+transition: background 0.3s;
+}
+.buy-btn:hover {
+background: #ff3255;
+}
+/* Contenidor estil blog */
+.autocenterContainer {
+max-width: 800px auto;     /* amplada màxima */
+text-align: center;
+margin: auto;         /* centra horitzontalment */
+background: white;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1); /* decoració */
+}
+.hero {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* Ocupa toda la pantalla */
+text-align: center;
+padding: 2rem;
+max-width: 600px auto;
+padding: 60px 20px;
+}
+.hero h1 {
+font-size: 2rem;
+max-width: 800px;
+margin: 0 auto;
+}
+.content {
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 800px;
+gap: 2rem; /* Espaciado entre elementos */
+}
+.hero-image {
+width: 100%;
+max-width: 700px;
+height: auto;
+}
+.laptop-container img {
+max-width: 100%;
+height: auto;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+.description {
+max-width: 800px;
+margin-top: 30px;
+font-size: 1.1rem;
+line-height: 1.6;
+text-align: center;
+}
+h1 {
+font-size: 2rem;
+font-weight: 700;
+}
+p {
+font-size: 1rem;
+line-height: 1.6;
+max-width: 700px;
+}
+.buynow-btn {
+text-align: center;
+background: white;
+color: #ff4b6a;
+border:  #ff4b6a solid 2px;
+padding: 8px 18px;
+border-radius: 20px;
+font-weight: 600;
+margin-bottom: 16px;
+cursor: pointer;
+transition: background 0.3s;
+}
+.autocenter {
+max-width: 1264px;
+text-align: center;
+margin: auto;
+padding: 0 15px;
+}
+.section {
+height: 800px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+font-size: 2em;
+}
+.contenidor {
+margin-top: 90px;
+padding: 12px;
+max-width: 900px;
+margin-inline: auto;
+}
+.container {
+display: flex;
+justify-content: space-around;
+align-items: stretch;
+gap: 30px;
+flex-wrap: wrap;
+padding: 40px;
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
+flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+}
+.feature {
+background: white;
+padding: 20px;
+border-radius: 8px;
+flex: 1 1 300px; /* Crece, encoge, mínimo 300px */
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+.feature:hover {
+transform: translateY(-5px);
+}
+.feature h2 {
+margin-top: 0;
+color: #333;
+}
+.feature p {
+color: #666;
+}
+#prueba1 {
+background: black;
+height: 1000px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+margin: 0;
+padding: 0;
+font-size: 2em;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#prueba2 {
+background: rgb(255, 255, 255);
+height: 1500px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: black;
+text-align: center;
+font-size: 2em;
+margin: 0;
+height: 1500px;
+padding: 0;
+font-size: 2em;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+/* Peu de pàgina */
+.footer {
+background-color: #f5f5f5;
+padding: 40px 20px;
+font-family: sans-serif;
+color: #333;
+}
+.footer-columns {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 30px;
+}
+.column {
+flex: 1 1 200px;
+margin: 10px;
+}
+.column h4 {
+margin-bottom: 10px;
+font-size: 16px;
+}
+.column ul {
+list-style: none;
+padding: 0;
+}
+.column ul li {
+margin-bottom: 8px;
+}
+.column ul li a {
+text-decoration: none;
+color: #555;
+}
+.column ul li a:hover {
+text-decoration: underline;
+}
+.footer-info {
+text-align: center;
+font-size: 14px;
+color: #666;
+}
+.footer-info a {
+color: #666;
+text-decoration: none;
+}
+.footer-info a:hover {
+text-decoration: underline;
 }
 .seccion-principal-prueba{
 height: 1000px;
@@ -117,6 +290,7 @@ background-color:#ccc;
 background-color: black;
 padding: 120px 20px;
 box-sizing: border-box;
+color: #ffffff; /* <-- 1. CAMBIO AÑADIDO */
 }
 .bloque-texto {
 max-width: 900px;
@@ -129,7 +303,7 @@ font-weight: 800;
 line-height: 1.1;
 margin-bottom: 24px; 
 }
-.bloque-texto p {
+.seccion-negra-principal .bloque-texto p { /* <-- 2. CAMBIO DE SELECTOR */
 font-size: 17.6px; 
 line-height: 1.6;
 color: #ccc;
@@ -235,6 +409,13 @@ width: 50%;
 .infoContainer .textContainer > h1 {
 margin: 0;
 }
+/* v-- 3. REGLA NUEVA AÑADIDA --v */
+.infoContainer .textContainer p {
+color: #ccc;
+font-size: 16px;
+line-height: 1.6;
+}
+/* ^-- REGLA NUEVA AÑADIDA --^ */
 .infoContainer .backvideo {
 box-sizing: border-box;
 min-height: 250px;
@@ -270,4 +451,71 @@ margin-top: 24px;
 width: 30px;
 height: 30px;
 }
+.container {
+  max-width: 1000px;
+  text-align: center;
+  padding: 80px 20px; /* espacio arriba y abajo */
+}
 
+/* Título */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 span {
+  color: #f4c20d;
+}
+
+/* Texto descriptivo */
+.description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 20px auto 50px;
+  max-width: 650px;
+}
+
+/* Contenedor de tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjeta individual */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Icono */
+.icon {
+  font-size: 24px;
+  color: #f4c20d;
+  margin-bottom: 10px;
+}
+
+/* Título y texto dentro de la tarjeta */
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
