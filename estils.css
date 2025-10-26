@@ -88,11 +88,11 @@ background: #ff3255;
 }
 /* Contenidor estil blog */
 .autocenterContainer {
-max-width: 800px auto;     /* amplada màxima */
+max-width: 800px auto;  /* amplada màxima */
 text-align: center;
-margin: auto;         /* centra horitzontalment */
-background: white;
-padding: 20px;
+margin: auto;  /* centra horitzontalment */
+background: rgb(255, 255, 255);
+padding: 20px;  
 box-shadow: 0 0 10px rgba(0,0,0,0.1); /* decoració */
 }
 .hero {
@@ -296,6 +296,9 @@ color: #ffffff; /* <-- 1. CAMBIO AÑADIDO */
 max-width: 900px;
 margin: 0 auto 0px auto;
 text-align: center;
+}
+.bloque-texto p{
+  text-align: center;
 }
 .bloque-texto h1 {
 font-size: 44.8px; 
@@ -518,4 +521,13 @@ h1 span {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.5;
+}
+#video_skate {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px; /* Puedes ajustar este valor */
+  overflow: hidden;    /* Para que el video no se salga de las esquinas */
+  width: 30%;         /* Necesario para que 'margin: auto' funcione */
+  max-width: 800px;   /* Opcional: un límite de ancho */
 }
