@@ -1,11 +1,11 @@
-/* General */
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #fafafa;
-}
 
-/* Part superior */
+
+body {
+margin: 0;
+background-color: #000;
+color: #fff;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 .top-bar {
   position: fixed;
   top: 0; left: 0;
@@ -18,7 +18,6 @@ body {
   z-index: 1000;
 }
 
-/* Capçalera sticky amb efecte "frozen glass" */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -28,7 +27,7 @@ body {
   border-bottom: 1px solid rgba(200, 200, 200, 0.3);
 }
 
-/* Contingut dins la capçalera */
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -43,7 +42,7 @@ body {
   padding: 10px 40px;
 }
 
-/* Secció esquerra (logo + nom) */
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -67,7 +66,7 @@ body {
   color: #666;
 }
 
-/* Menú de navegació */
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -84,7 +83,7 @@ body {
   color: #000;
 }
 
-/* Botó "Buy" */
+
 .buy-btn {
   background: #ff4b6a;
   color: white;
@@ -100,20 +99,175 @@ body {
   background: #ff3255;
 }
 
-/* Contingut principal */
-.content {
-  padding: 50px;
-  background: white;
-  border-radius: 20px;
-  margin: 30px auto;
-  width: 80%;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+.barra-fixed {
+position: fixed;
+top: 0; left: 0;
+width: 100%;
+padding: 15px;
+color: white;
+font-weight: bold;
+text-align: center;
+z-index: 1000;
+}
+.seccion-principal-prueba{
+height: 1000px;
+background-color:#ccc;
+}
+.seccion-negra-principal {
+background-color: black;
+padding: 120px 20px;
+box-sizing: border-box;
+}
+.bloque-texto {
+max-width: 900px;
+margin: 0 auto 0px auto;
+text-align: center;
+}
+.bloque-texto h1 {
+font-size: 44.8px; 
+font-weight: 800;
+line-height: 1.1;
+margin-bottom: 24px; 
+}
+.bloque-texto p {
+font-size: 17.6px; 
+line-height: 1.6;
+color: #ccc;
+max-width: 600px;
+text-align: center;
+margin: 40px auto;
+}
+.bloque-imagen {
+max-width: 1000px;
+margin: 0 auto 0 auto;
+text-align: center;
+}
+.bloque-imagen img {
+width: 100%;
+border-radius: 16px;
+}
+.bloques-inferiores {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 40px;
+max-width: 1000px;
+margin: 0 auto;
+padding: 0px 20px;
+box-sizing: border-box;
+}
+.bloque {
+width: 50%;
+box-sizing: border-box;
+color: white;
+display: flex;
+flex-direction: column;
+min-height: 200px;
+}
+.bloque-izquierda {
+background-color: #111;
+border-radius: 20px;
+padding: 30px;
+width: 420px;
+box-sizing: border-box;
+text-align: left;
+}
+.bloque-derecha {
+background-color: #111;
+border-radius: 20px;
+padding: 30px;
+width: 420px;
+box-sizing: border-box;
+text-align: left;
+}
+.bloque h3 {
+font-size: 20.8px; 
+margin-bottom: 12.8px; 
+}
+.bloque p {
+font-size: 16px; 
+color: #ccc;
+line-height: 1.5;
+margin-bottom: 24px; 
+}
+.imagen-izquierda-contenedor {
+margin-top:0;
+align-self: center;
+width: 180px;
+}
+.imagen-contenedor img {
+width: 180px;
+height: auto;
+border-radius: 10px;
+}
+.bloque-derecha img {
+width: 60px;
+margin-top: 0;
+}
+.autocenterContainer {
+max-width: 1264px;
+margin: auto;
+background: rgb(0, 0, 0);
+padding: 20px;
+}
+.infoContainer {
+--horizPadding: 20px;
+box-sizing: border-box;
+padding-left: var(--horizPadding);
+padding-right: var(--horizPadding);
+width: calc(100% - 2 * var(--horizPadding));
+}
+.infoContainer > .cutMask {
+background-color: #111;
+border-radius: 16px;
+box-sizing: border-box;
+display: flex;
+overflow: hidden;
+width: 100%;
+}
+.infoContainer .textContainer {
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+padding: 32px;
+width: 50%;
+}
+.infoContainer .textContainer > h1 {
+margin: 0;
+}
+.infoContainer .backvideo {
+box-sizing: border-box;
+min-height: 250px;
+width: 50%;
+}
+.seccion-cinco-bloques {
+max-width: 800px;
+margin: 10px auto;
+}
+.flex-cuatro-bloques {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.flex-item {
+background-color: #000;
+color: #fff;
+padding: 32px;
+border-radius: 16px;
+box-sizing: border-box;
+width: 48%;
+}
+.flex-item p {
+color: #ccc;
+font-size: 16px; 
+line-height: 1.6;
+}
+.flex-item-alineado-izquierda {
+width: 48%;
+margin-top: 24px;
+}
+.imagen-pequeña-caja{
+width: 30px;
+height: 30px;
 }
 
-.autocenter {
-  max-width: 1264px;
-  margin: auto;
-  padding: 0 15px;
-}
-
-/* Peu de pàgina */
