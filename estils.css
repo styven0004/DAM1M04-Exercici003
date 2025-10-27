@@ -663,7 +663,7 @@ display: block;
             font-weight: bold;
         }
 .container-features {
-  max-width: 900px;
+  max-width: 10000px;
   margin: 60px auto;
   padding: 0 20px;
   display: flex;
@@ -687,13 +687,14 @@ display: block;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 100px;
+  margin-bottom: 10px;
 }
 
 .feature-final {
-  flex: 1 1 200px;
+  flex: 1 1 150px;
   display: flex;
-  flex-direction: column;
+  
   align-items: center;
   text-align: center;
 }
@@ -711,6 +712,7 @@ display: block;
 
 .link {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .link a {
