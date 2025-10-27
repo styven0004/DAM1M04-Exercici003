@@ -490,7 +490,7 @@ h1 span {
 
 
 .card {
-  background: #fff;
+  background: #d2d2d2;
   border-radius: 8px;
 
   width: 280px;
@@ -536,6 +536,40 @@ text-align: center;
 
 
 }
+#imagen-iconos{
+ width: 100%;   
+    height: auto;  
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+.seccion-iconos {
+
+    max-width: 900px;
+    margin: 60px auto; 
+    text-align: center; 
+}
+
+.icono-item {
+    display: inline-block; 
+    width: 190px;          
+    margin: 15px;       
+    vertical-align: top; 
+}
+
+.icono-item img {
+    height: 60px;          
+    margin-bottom: 10px;   
+}
+
+.icono-item p {
+    font-size: 15px;
+    font-weight: bold;      
+    color: #333;
+    margin: 0;              
+    line-height: 1.4;      
+}
 .description-seccion-negra-final{
  
 display: block; 
@@ -544,7 +578,7 @@ display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.cards {
+.cards-negro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -552,17 +586,14 @@ display: block;
 }
 
 
-.card {
+.card-negro {
   background: black;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  width: 280px;
+  width: 350px;
   padding: 20px;
   text-align: left;
  
 }
-
-
-
 
 .icon {
   font-size: 24px;
@@ -571,14 +602,122 @@ display: block;
 }
 
 
-.card h3 {
+.card-negro h3 {
   margin-bottom: 10px;
   font-size: 1.1rem;
   color: white;
 }
 
-.card p {
+.card-negro p {
   font-size: 0.9rem;
   color: white;
   line-height: 1.5;
 }
+
+
+        .envoltura-total {
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+
+      
+        .envoltura-total h1 {
+            font-size: 40px;
+            line-height: 1.3; 
+            color: #222; 
+            max-width: 400px;
+            text-align: center;
+            padding-left: 250px;
+        }
+
+        .parrafo-intro-final { 
+            font-size: 17px;
+            line-height: 1.6; 
+            color: #555; 
+            max-width: 440px; 
+            margin: 20px auto 50px auto; 
+        }
+
+       
+
+       
+        .bloque-final { 
+            display: inline-block;
+            width: 400px; 
+            vertical-align: top; 
+            margin: 15px; 
+        }
+
+        
+        .bloque-final img {
+            height: 55px; 
+            margin-bottom: 10px; 
+        }
+        
+      
+        .bloque-final p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.5;
+            max-width: 200px;
+            font-weight: bold;
+        }
+.container-features {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.features-final {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-final {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-final img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.feature-final span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.link {
+  text-align: center;
+}
+
+.link a {
+  color: #007aff;
+  text-decoration: none;
+  font-weight: bold;
+}
+       
+
+       
